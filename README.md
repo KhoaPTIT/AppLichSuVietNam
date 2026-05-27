@@ -1,4 +1,4 @@
-# Lịch Sử Việt Nam Tương Tác - Android App (Hoàn chỉnh)
+# Lịch Sử Việt Nam Tương Tác - Android App 
 
 App học Lịch Sử Việt Nam tương tác với đầy đủ database, authentication, CRUD.
 
