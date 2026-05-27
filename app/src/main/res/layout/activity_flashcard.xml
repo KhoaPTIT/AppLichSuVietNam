@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+        <ImageButton android:id="@+id/btnBack" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/bg_rounded_input_bg" android:src="@drawable/ic_arrow_back" android:contentDescription="Back" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:text="@string/flashcards" android:textColor="@color/text_primary" android:textSize="16sp" android:textStyle="bold" />
+        <TextView android:id="@+id/tvCounter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/text_tertiary" android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginBottom="24dp"
+            android:progressDrawable="@drawable/bg_progress" />
+
+        <LinearLayout
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rounded_card"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:minHeight="200dp"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView android:id="@+id/tvLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="@string/question" android:textColor="@color/text_tertiary" android:textSize="10sp" />
+            <TextView android:id="@+id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:lineSpacingMultiplier="1.6" android:textColor="@color/text_primary" android:textSize="15sp" />
+            <TextView android:id="@+id/tvHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/tap_to_reveal" android:textColor="@color/red_primary" android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/btnNotRemembered"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_flashcard_btn_fail"
+                android:gravity="center"
+                android:text="Chưa nhớ ✕"
+                android:textColor="#B3261E"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnRemembered"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_flashcard_btn_pass"
+                android:gravity="center"
+                android:text="Đã nhớ ✓"
+                android:textColor="#2E7D32"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Summary Layout (shown when deck is finished) -->
+    <LinearLayout
+        android:id="@+id/summaryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="32dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎉"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Hoàn thành phiên học!"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:background="@drawable/bg_rounded_input_bg" android:gravity="center" android:orientation="vertical"
+                android:paddingVertical="12dp" android:layout_marginEnd="8dp">
+                <TextView android:id="@+id/tvSummaryTotal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="0" android:textColor="@color/text_primary" android:textSize="22sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Tổng thẻ" android:textColor="@color/text_tertiary" android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:background="@drawable/bg_quiz_correct" android:gravity="center" android:orientation="vertical"
+                android:paddingVertical="12dp" android:layout_marginEnd="8dp">
+                <TextView android:id="@+id/tvSummaryRemembered" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="0" android:textColor="@color/success" android:textSize="22sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Đã nhớ" android:textColor="@color/success" android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:background="@drawable/bg_quiz_wrong" android:gravity="center" android:orientation="vertical"
+                android:paddingVertical="12dp">
+                <TextView android:id="@+id/tvSummaryNotRemembered" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="0" android:textColor="@color/error" android:textSize="22sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Chưa nhớ" android:textColor="@color/error" android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnReviewAgain"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_button_filled"
+            android:text="Ôn lại"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnFinish"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_button_outlined"
+            android:text="Hoàn thành"
+            android:textAllCaps="false"
+            android:textColor="@color/red_primary"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

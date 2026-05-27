@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red_primary">#B3261E</color>
+    <color name="red_light">#FFDAD6</color>
+    <color name="red_dark">#8C1D18</color>
+    <color name="gold">#F2C94C</color>
+    <color name="gold_light">#FFF3D0</color>
+    <color name="gold_dark">#8B6914</color>
+    <color name="bg">#FAFAFA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#FFF8F7</color>
+    <color name="text_primary">#1C1B1F</color>
+    <color name="text_secondary">#49454F</color>
+    <color name="text_tertiary">#79747E</color>
+    <color name="outline">#CAC4D0</color>
+    <color name="outline_variant">#E7E0EC</color>
+    <color name="error">#B3261E</color>
+    <color name="success">#2E7D32</color>
+    <color name="input_bg">#F7F2FA</color>
+    <color name="brown_dark">#5D4037</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="overlay_dark">#80000000</color>
+    <color name="success_bg">#E8F5E9</color>
+    <color name="error_bg">#FFEBEE</color>
+    <color name="blue_accent">#1565C0</color>
+    <color name="blue_bg">#E3F2FD</color>
+    <color name="orange_accent">#FF9800</color>
+</resources>

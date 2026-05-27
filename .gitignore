@@ -1,0 +1,21 @@
+﻿.gradle/
+.idea/
+build/
+*/build/
+local.properties
+*.iml
+
+# APK/AAB build outputs
+*.apk
+*.aab
+
+# Logs
+*.log
+
+# Keystore/signing files
+*.jks
+*.keystore
+
+# OS files
+.DS_Store
+Thumbs.db

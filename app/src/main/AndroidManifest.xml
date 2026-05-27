@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LichSuVietNam">
+
+        <activity android:name=".ui.activities.SplashActivity" android:exported="true" android:theme="@style/Theme.LichSuVietNam.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.activities.WelcomeActivity" />
+        <activity android:name=".ui.activities.LoginActivity" />
+        <activity android:name=".ui.activities.RegisterActivity" />
+        <activity android:name=".ui.activities.ForgotPasswordActivity" />
+        <activity android:name=".ui.activities.ProfileSetupActivity" />
+        <activity android:name=".ui.activities.MainActivity" />
+        <activity android:name=".ui.activities.EventDetailActivity" />
+        <activity android:name=".ui.activities.EventListActivity" />
+        <activity android:name=".ui.activities.MediaViewerActivity" />
+        <activity android:name=".ui.activities.QuizActivity" />
+        <activity android:name=".ui.activities.QuizResultActivity" />
+        <activity android:name=".ui.activities.SearchActivity" />
+        <activity android:name=".ui.activities.ThreadActivity" />
+        <activity android:name=".ui.activities.SettingsActivity" />
+        <activity android:name=".ui.activities.FlashcardActivity" />
+        <activity android:name=".ui.activities.FigureListActivity" />
+        <activity android:name=".ui.activities.FigureDetailActivity" />
+        <activity android:name=".ui.activities.VideoPlayerActivity" />
+        <activity android:name=".ui.activities.NewPostActivity" />
+        <activity android:name=".ui.activities.ImageGalleryActivity" />
+        <activity android:name=".ui.activities.VideoListActivity" />
+        <activity android:name=".ui.activities.SavedActivity" />
+        <activity android:name=".ui.activities.NotificationActivity" />
+        <activity android:name=".ui.activities.ChangePasswordActivity" />
+        <activity android:name=".ui.activities.LearningPathDetailActivity" />
+
+        <!-- Admin Activities -->
+        <activity android:name=".ui.activities.admin.AdminDashboardActivity" />
+        <activity android:name=".ui.activities.admin.AdminUsersActivity" />
+        <activity android:name=".ui.activities.admin.AdminCommunityActivity" />
+        <activity android:name=".ui.activities.admin.AdminEventsActivity" />
+        <activity android:name=".ui.activities.admin.AdminFiguresActivity" />
+    </application>
+</manifest>

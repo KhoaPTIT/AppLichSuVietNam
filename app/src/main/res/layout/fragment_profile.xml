@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/bg" android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:paddingHorizontal="16dp" android:paddingTop="8dp" android:paddingBottom="12dp">
+        <FrameLayout android:layout_width="56dp" android:layout_height="56dp" android:background="@drawable/bg_circle_red">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:id="@+id/tvInitials" android:text="NV" android:textColor="@color/red_primary" android:textSize="20sp" android:textStyle="bold" />
+        </FrameLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tvUserName" android:text="" android:textColor="@color/text_primary" android:textSize="16sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tvUserEmail" android:text="" android:textColor="@color/text_tertiary" android:textSize="12sp" />
+        </LinearLayout>
+        <ImageButton android:id="@+id/btnSettings" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/bg_rounded_input_bg" android:src="@drawable/ic_person" android:contentDescription="Settings" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingHorizontal="16dp" android:paddingBottom="16dp">
+        <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginEnd="8dp" android:layout_weight="1" app:cardCornerRadius="12dp" app:cardElevation="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:padding="10dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tvPoints" android:text="0" android:textColor="@color/text_primary" android:textSize="14sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/points" android:textColor="@color/text_tertiary" android:textSize="10sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginEnd="8dp" android:layout_weight="1" app:cardCornerRadius="12dp" app:cardElevation="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:padding="10dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tvHours" android:text="0h" android:textColor="@color/text_primary" android:textSize="14sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hours_learned" android:textColor="@color/text_tertiary" android:textSize="10sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:cardCornerRadius="12dp" app:cardElevation="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:padding="10dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tvSaved" android:text="0" android:textColor="@color/text_primary" android:textSize="14sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/saved" android:textColor="@color/text_tertiary" android:textSize="10sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:paddingHorizontal="16dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <androidx.cardview.widget.CardView android:id="@+id/btnSavedEvents" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" app:cardCornerRadius="12dp" app:cardElevation="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:padding="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📌" android:textSize="18sp" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sự kiện đã lưu" android:textColor="@color/text_primary" android:textSize="13sp" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Xem lại các sự kiện yêu thích" android:textColor="@color/text_tertiary" android:textSize="11sp" />
+                    </LinearLayout>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="@color/text_tertiary" android:textSize="18sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:id="@+id/btnNotifications" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" app:cardCornerRadius="12dp" app:cardElevation="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:padding="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔔" android:textSize="18sp" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:text="@string/notifications" android:textColor="@color/text_primary" android:textSize="13sp" />
+                    <TextView android:id="@+id/tvNotifBadge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textColor="@color/red_primary" android:textSize="11sp" android:visibility="gone" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:id="@+id/btnAdmin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:visibility="gone" app:cardCornerRadius="12dp" app:cardElevation="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:padding="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⚙️" android:textSize="18sp" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trang quản trị" android:textColor="@color/red_primary" android:textSize="13sp" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quản lý hệ thống" android:textColor="@color/text_tertiary" android:textSize="11sp" />
+                    </LinearLayout>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="@color/text_tertiary" android:textSize="18sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <Button android:id="@+id/btnLogout" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="16dp" android:background="?android:attr/selectableItemBackground" android:text="@string/logout" android:textAllCaps="false" android:textColor="@color/error" android:textSize="13sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

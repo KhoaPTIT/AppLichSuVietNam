@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lịch Sử Việt Nam</string>
+    <string name="app_subtitle">Tương tác &amp; Khám phá</string>
+    <string name="version">Phiên bản 1.0.0</string>
+
+    <!-- Welcome -->
+    <string name="welcome_title">Lịch Sử Việt Nam</string>
+    <string name="welcome_subtitle">Tương Tác</string>
+    <string name="welcome_desc">Khám phá hàng nghìn năm lịch sử qua timeline tương tác, bản đồ, quiz và cộng đồng yêu sử.</string>
+    <string name="btn_login">Đăng nhập</string>
+    <string name="btn_register">Đăng ký tài khoản</string>
+    <string name="btn_guest">Tiếp tục với tư cách khách</string>
+
+    <!-- Login -->
+    <string name="login_title">Đăng nhập</string>
+    <string name="login_welcome">Chào mừng bạn trở lại!</string>
+    <string name="hint_email">Email hoặc Số điện thoại</string>
+    <string name="hint_email_placeholder">email@example.com</string>
+    <string name="hint_password">Mật khẩu</string>
+    <string name="hint_password_placeholder">••••••••</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="or">hoặc</string>
+    <string name="continue_google">Tiếp tục với Google</string>
+    <string name="no_account">Chưa có tài khoản? </string>
+    <string name="register_now">Đăng ký ngay</string>
+    <string name="please_enter_email">Vui lòng nhập email hoặc SĐT</string>
+    <string name="please_enter_password">Vui lòng nhập mật khẩu</string>
+
+    <!-- Register -->
+    <string name="register_title">Đăng ký</string>
+    <string name="register_desc">Tạo tài khoản để lưu tiến trình và tham gia cộng đồng.</string>
+    <string name="hint_fullname">Họ và tên</string>
+    <string name="hint_fullname_placeholder">Nguyễn Văn A</string>
+    <string name="hint_confirm_password">Nhập lại mật khẩu</string>
+    <string name="hint_new_password">Mật khẩu mới</string>
+    <string name="hint_min_8_chars">Tối thiểu 8 ký tự</string>
+    <string name="agree_terms">Tôi đồng ý với </string>
+    <string name="terms_of_use">Điều khoản sử dụng</string>
+    <string name="btn_register_submit">Đăng ký</string>
+    <string name="has_account">Đã có tài khoản? </string>
+    <string name="pw_min_8">Tối thiểu 8 ký tự</string>
+    <string name="pw_upper_lower">Có chữ hoa và chữ thường</string>
+    <string name="pw_has_number">Có ít nhất 1 số</string>
+
+    <!-- Forgot Password -->
+    <string name="forgot_title">Quên mật khẩu</string>
+    <string name="forgot_desc">Nhập email hoặc số điện thoại đã đăng ký. Chúng tôi sẽ gửi mã xác nhận 6 số.</string>
+    <string name="send_otp">Gửi mã xác nhận</string>
+    <string name="enter_otp">Nhập mã OTP</string>
+    <string name="otp_sent_to">Mã xác nhận đã được gửi đến </string>
+    <string name="not_received">Chưa nhận được? </string>
+    <string name="resend">Gửi lại (55s)</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="reset_password">Đặt lại mật khẩu</string>
+    <string name="reset_desc">Tạo mật khẩu mới cho tài khoản của bạn.</string>
+    <string name="reset_success">Đặt lại thành công!</string>
+    <string name="reset_success_desc">Mật khẩu của bạn đã được cập nhật. Bạn có thể đăng nhập với mật khẩu mới.</string>
+    <string name="back_to_login">Về Đăng nhập</string>
+
+    <!-- Profile Setup -->
+    <string name="profile_setup_title">Hoàn tất hồ sơ</string>
+    <string name="profile_setup_desc">Giúp chúng tôi cá nhân hóa trải nghiệm cho bạn.</string>
+    <string name="skip">Bỏ qua</string>
+    <string name="add_avatar">Thêm ảnh đại diện</string>
+    <string name="choose_topics">Chọn chủ đề yêu thích</string>
+    <string name="start_explore">Bắt đầu khám phá</string>
+
+    <!-- Home -->
+    <string name="home_title">Lịch Sử Việt Nam</string>
+    <string name="home_subtitle">Khám phá dòng thời gian</string>
+    <string name="search_hint">Tìm sự kiện, nhân vật, địa danh…</string>
+    <string name="filter">Lọc</string>
+
+    <!-- Bottom Nav -->
+    <string name="nav_home">Trang chủ</string>
+    <string name="nav_map">Bản đồ</string>
+    <string name="nav_learn">Học tập</string>
+    <string name="nav_community">Cộng đồng</string>
+    <string name="nav_profile">Cá nhân</string>
+
+    <!-- Map -->
+    <string name="map_title">Bản đồ lịch sử</string>
+    <string name="timeline">Dòng thời gian</string>
+    <string name="all">Tất cả</string>
+
+    <!-- Time Map -->
+    <string name="time_map_title">Bản Đồ Thời Gian</string>
+    <string name="time_map_subtitle">Khám phá lịch sử qua bản đồ tương tác</string>
+
+    <!-- Dynamic Timeline -->
+    <string name="dynamic_timeline_title">Đường Thời Gian Động</string>
+    <string name="dynamic_timeline_subtitle">Theo dõi sự kiện theo dòng thời gian</string>
+
+    <!-- Event Detail -->
+    <string name="overview">Tổng quan</string>
+    <string name="key_figures">Nhân vật chính</string>
+    <string name="images_docs">Hình ảnh &amp; Tài liệu</string>
+    <string name="save">Lưu</string>
+    <string name="saved">Đã lưu</string>
+    <string name="discuss">Thảo luận</string>
+    <string name="login_to_save">Đăng nhập để lưu</string>
+
+    <!-- Learn -->
+    <string name="learn_title">Học tập</string>
+    <string name="learn_subtitle">Lộ trình học theo chủ đề</string>
+    <string name="learning_paths">Lộ trình học</string>
+    <string name="flashcards_today">Flashcards hôm nay</string>
+    <string name="cards_to_review">15 thẻ cần ôn tập</string>
+    <string name="streak">Streak</string>
+    <string name="points">Điểm</string>
+    <string name="progress">Tiến độ</string>
+
+    <!-- Flashcard -->
+    <string name="flashcards">Flashcards</string>
+    <string name="question">CÂU HỎI</string>
+    <string name="answer">ĐÁP ÁN</string>
+    <string name="tap_to_reveal">Nhấn để xem đáp án</string>
+    <string name="not_remembered">Chưa nhớ</string>
+    <string name="remembered">Đã nhớ ✓</string>
+
+    <!-- Quiz -->
+    <string name="quiz_title">Quiz</string>
+    <string name="correct">Chính xác!</string>
+    <string name="wrong_prefix">Chưa đúng. Đáp án đúng là </string>
+    <string name="complete">Hoàn thành!</string>
+    <string name="you_answered">Bạn đã trả lời đúng</string>
+    <string name="questions">câu hỏi</string>
+    <string name="time_label">Thời gian</string>
+    <string name="score_label">Điểm</string>
+    <string name="rank_label">Xếp hạng</string>
+    <string name="retry">Làm lại</string>
+    <string name="back_to_home">Về trang chủ</string>
+
+    <!-- Search -->
+    <string name="search_title">Tìm kiếm</string>
+    <string name="search_placeholder">Tìm kiếm…</string>
+    <string name="tab_events">Sự kiện</string>
+    <string name="tab_figures">Nhân vật</string>
+    <string name="tab_places">Địa danh</string>
+    <string name="recent_searches">Tìm kiếm gần đây</string>
+    <string name="no_results">Không tìm thấy kết quả</string>
+    <string name="try_other">Thử từ khóa khác</string>
+
+    <!-- Community -->
+    <string name="community_title">Cộng đồng</string>
+    <string name="community_subtitle">Thảo luận &amp; chia sẻ</string>
+    <string name="login_to_comment">Đăng nhập để bình luận và tham gia thảo luận</string>
+    <string name="write_comment">Viết bình luận…</string>
+    <string name="login_to_comment_short">Đăng nhập để bình luận</string>
+    <string name="reply">Trả lời</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Cá nhân</string>
+    <string name="guest_mode">Bạn đang ở chế độ Khách</string>
+    <string name="guest_desc">Đăng nhập để lưu tiến trình, bộ sưu tập và tải offline.</string>
+    <string name="login_now">Đăng nhập ngay</string>
+    <string name="saved_collections">Bộ sưu tập đã lưu</string>
+    <string name="offline_content">Nội dung Offline</string>
+    <string name="offline_desc">3 bài đã tải • 12 MB</string>
+    <string name="notifications">Thông báo</string>
+    <string name="settings">Cài đặt</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="hours_learned">Giờ học</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Cài đặt</string>
+    <string name="personal_info">Thông tin cá nhân</string>
+    <string name="dark_mode">Chế độ tối</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="language_vi">Tiếng Việt</string>
+    <string name="security">Bảo mật &amp; Quyền riêng tư</string>
+    <string name="terms">Điều khoản sử dụng</string>
+    <string name="help">Trợ giúp &amp; Phản hồi</string>
+    <string name="about">Về ứng dụng</string>
+
+    <!-- History Events -->
+    <string name="hai_ba_trung">Khởi nghĩa Hai Bà Trưng</string>
+    <string name="hai_ba_trung_desc">Cuộc khởi nghĩa đầu tiên chống Bắc thuộc do Trưng Trắc và Trưng Nhị lãnh đạo.</string>
+    <string name="hai_ba_trung_full">Khởi nghĩa Hai Bà Trưng (40–43 SCN) là cuộc khởi nghĩa đầu tiên trong lịch sử Việt Nam chống ách đô hộ của nhà Hán. Trưng Trắc và Trưng Nhị đã lãnh đạo nhân dân đánh đuổi thái thú Tô Định, giành lại 65 thành trì và xưng vương.</string>
+    <string name="bach_dang">Chiến thắng Bạch Đằng</string>
+    <string name="bach_dang_desc">Ngô Quyền đánh bại quân Nam Hán, chấm dứt 1000 năm Bắc thuộc.</string>
+    <string name="nha_ly">Nhà Lý thành lập</string>
+    <string name="nha_ly_desc">Lý Công Uẩn lên ngôi, dời đô về Thăng Long, mở ra thời kỳ phát triển rực rỡ.</string>
+    <string name="lam_son">Khởi nghĩa Lam Sơn</string>
+    <string name="lam_son_desc">Lê Lợi khởi nghĩa chống quân Minh, 10 năm kháng chiến giành độc lập.</string>
+    <string name="cmt8">Cách mạng tháng Tám</string>
+    <string name="cmt8_desc">Nhân dân Việt Nam đứng lên giành chính quyền, tuyên bố độc lập 2/9/1945.</string>
+</resources>

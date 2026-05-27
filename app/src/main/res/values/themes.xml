@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.LichSuVietNam" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/red_primary</item>
+        <item name="colorPrimaryContainer">@color/red_light</item>
+        <item name="colorOnPrimaryContainer">@color/red_dark</item>
+        <item name="colorSecondary">@color/gold</item>
+        <item name="colorSecondaryContainer">@color/gold_light</item>
+        <item name="colorError">@color/error</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        <item name="colorOutline">@color/outline</item>
+        <item name="colorOutlineVariant">@color/outline_variant</item>
+        <item name="android:colorBackground">@color/bg</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.LichSuVietNam.Splash" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowBackground">@color/red_primary</item>
+        <item name="android:statusBarColor">@color/red_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="ShapeAppearance.App.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ShapeAppearance.App.RoundedLarge" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+    <style name="Widget.App.Button.Filled" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/red_primary</item>
+        <item name="cornerRadius">50dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Widget.App.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/red_primary</item>
+        <item name="android:textColor">@color/red_primary</item>
+        <item name="cornerRadius">50dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Widget.App.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="cornerRadius">50dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Feature grid button style -->
+    <style name="FeatureButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_rounded_card</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <style name="FeatureButtonText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp">
+
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_circle_gold">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="🏆"
+            android:textSize="36sp" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/complete"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/you_answered"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/red_primary"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/0"
+            android:textColor="@color/text_tertiary"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questions"
+        android:textColor="@color/text_tertiary"
+        android:textSize="13sp" />
+
+    <!-- Correct / Wrong / Skipped -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:background="@drawable/bg_quiz_correct" android:gravity="center" android:orientation="vertical"
+            android:paddingHorizontal="8dp" android:paddingVertical="12dp" android:layout_marginEnd="8dp">
+            <TextView android:id="@+id/tvCorrectCount" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="0" android:textColor="@color/success" android:textSize="22sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Đúng" android:textColor="@color/success" android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:background="@drawable/bg_quiz_wrong" android:gravity="center" android:orientation="vertical"
+            android:paddingHorizontal="8dp" android:paddingVertical="12dp" android:layout_marginEnd="8dp">
+            <TextView android:id="@+id/tvWrongCount" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="0" android:textColor="@color/error" android:textSize="22sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Sai" android:textColor="@color/error" android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:background="@drawable/bg_rounded_input_bg" android:gravity="center" android:orientation="vertical"
+            android:paddingHorizontal="8dp" android:paddingVertical="12dp">
+            <TextView android:id="@+id/tvSkippedCount" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="0" android:textColor="@color/text_tertiary" android:textSize="22sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Bỏ qua" android:textColor="@color/text_tertiary" android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Stats -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_rounded_input_bg" android:gravity="center" android:orientation="vertical" android:paddingHorizontal="16dp" android:paddingVertical="8dp" android:layout_marginEnd="12dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tvTime" android:text="0:00" android:textColor="@color/text_primary" android:textSize="16sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_label" android:textColor="@color/text_tertiary" android:textSize="10sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_rounded_input_bg" android:gravity="center" android:orientation="vertical" android:paddingHorizontal="16dp" android:paddingVertical="8dp" android:layout_marginEnd="12dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tvPointsEarned" android:text="+0" android:textColor="@color/text_primary" android:textSize="16sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/score_label" android:textColor="@color/text_tertiary" android:textSize="10sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_rounded_input_bg" android:gravity="center" android:orientation="vertical" android:paddingHorizontal="16dp" android:paddingVertical="8dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tvRank" android:text="A+" android:textColor="@color/text_primary" android:textSize="16sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rank_label" android:textColor="@color/text_tertiary" android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRetry"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_button_filled"
+        android:text="@string/retry"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_button_outlined"
+        android:text="@string/back_to_home"
+        android:textAllCaps="false"
+        android:textColor="@color/red_primary" />
+</LinearLayout>
