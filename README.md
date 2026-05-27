@@ -6,11 +6,11 @@ App học Lịch Sử Việt Nam tương tác với đầy đủ database, authe
 
 ```
 com.lichsuvietnam.app/
-├── MyApp.java                    # Application - khởi tạo DB seed
+├── MyApp.java                  
 ├── database/
-│   ├── AppDatabase.java          # Room Database (12 bảng)
-│   ├── DatabaseSeeder.java       # Dữ liệu mẫu ban đầu
-│   ├── entities/                 # 12 Entity classes
+│   ├── AppDatabase.java        
+│   ├── DatabaseSeeder.java       
+│   ├── entities/            
 │   │   ├── UserEntity
 │   │   ├── HistoryEventEntity
 │   │   ├── QuizQuestionEntity
@@ -23,7 +23,7 @@ com.lichsuvietnam.app/
 │   │   ├── CommentEntity
 │   │   ├── BookmarkEntity
 │   │   └── SearchHistoryEntity
-│   └── dao/                      # 8 DAO interfaces
+│   └── dao/                     
 │       ├── UserDao
 │       ├── HistoryEventDao
 │       ├── QuizDao
@@ -33,12 +33,12 @@ com.lichsuvietnam.app/
 │       ├── BookmarkDao
 │       └── SearchHistoryDao
 ├── utils/
-│   ├── SessionManager.java       # Auth session + password hashing
-│   └── TimeUtils.java            # Hiển thị thời gian tương đối
-├── activities/                   # 15 Activities
-├── fragments/                    # 5 Fragments
-├── adapters/                     # 4 RecyclerView Adapters
-└── models/                       # View models
+│   ├── SessionManager.java       
+│   └── TimeUtils.java            
+├── activities/                  
+├── fragments/                   
+├── adapters/                     
+└── models/                      
 ```
 
 ## Tính năng hoàn chỉnh
