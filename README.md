@@ -43,7 +43,7 @@ com.lichsuvietnam.app/
 
 ## Tính năng hoàn chỉnh
 
-### Authentication (thật)
+### Authentication 
 - Đăng ký tài khoản (lưu vào DB, hash password SHA-256)
 - Đăng nhập (xác thực từ DB)
 - Quên mật khẩu (flow 3 bước)
@@ -64,19 +64,19 @@ com.lichsuvietnam.app/
 - Lọc theo thời kỳ (Bắc thuộc, Phong kiến, Cận đại, Hiện đại)
 - Click vào xem chi tiết đầy đủ
 
-### Tìm kiếm (thật)
+### Tìm kiếm 
 - Full-text search trong DB (title, description, location, nhân vật)
 - Lưu lịch sử tìm kiếm
 - Kết quả real-time khi gõ
 
-### Quiz (hoàn chỉnh)
+### Quiz 
 - 15 câu hỏi từ DB, random mỗi lần chơi
 - Đếm thời gian thực
 - Tính điểm, xếp hạng (A+ → D)
 - Lưu kết quả vào DB
 - Cộng điểm cho user
 
-### Flashcards (có tracking)
+### Flashcards 
 - 15 thẻ từ DB
 - Theo dõi tiến trình (nhớ/chưa nhớ)
 - Ưu tiên hiện thẻ chưa thuộc
